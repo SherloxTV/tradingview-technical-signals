@@ -3354,8 +3354,7 @@
                 customFilterCondition: j("earnings_release_next_date"),
                 formatter: D
             },
-            "
-            ": {
+            "Recommend.All": {
                 control: "select",
                 category: P,
                 mutateDisplayValue: v.signalDisplayFunctions.processRecommendSignal,
