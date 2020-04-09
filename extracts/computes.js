@@ -70,10 +70,10 @@ const misc = {
   },
 
   computeRecommendSignal: function (e) {
-    if (e >= -1 && e < -.5) return n.STRONG_SELL
-    if (e >= -.5 && e < 0) return n.SELL
+    if (e >= -1 && e < -0.5) return n.STRONG_SELL
+    if (e >= -0.5 && e < 0) return n.SELL
     if (e === 0) return n.NEUTRAL
-    if (e > 0 && e <= .5) return n.BUY
-    if (e > .5 && e <= 1) return n.STRONG_BUY
+    if (e > 0 && e <= 0.5) return n.BUY
+    if (e > 0.5 && e <= 1) return n.STRONG_BUY
   }
 }
