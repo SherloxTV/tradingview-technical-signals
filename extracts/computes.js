@@ -8,8 +8,8 @@ const movingAverages = {
 
 const oscillators = {
   computeRSISignal: function (rsi7, prevRsi7) {
-    if (e < 30 && prevRsi7 > rsi7) return n.BUY
-    if (e > 70 && prevRsi7 < rsi7) return n.SELL
+    if (rsi7 < 30 && prevRsi7 > rsi7) return n.BUY
+    if (rsi7 > 70 && prevRsi7 < rsi7) return n.SELL
     return n.NEUTRAL
   },
 
